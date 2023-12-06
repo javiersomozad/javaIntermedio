@@ -1,0 +1,13 @@
+package com.example.demo.controllers.dto;
+
+import java.math.BigDecimal;
+
+import com.example.demo.entities.Marker;
+
+public class ProductDTO {
+
+		private Long id;
+		private String name;
+		private BigDecimal price;
+		private Marker marker;
+}

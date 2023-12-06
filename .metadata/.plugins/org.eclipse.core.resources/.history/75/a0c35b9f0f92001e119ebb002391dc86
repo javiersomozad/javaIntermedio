@@ -1,0 +1,87 @@
+package com.example.demo;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+
+import com.example.demo.controllers.dto.MarkerDTO;
+import com.example.demo.entities.Marker;
+import com.example.demo.entities.Product;
+
+
+@SpringBootTest
+@AutoConfigureMockMvc
+class ApiRestMarkerControllerTests {
+	
+	@Autowired
+	private MockMvc mockMvc;
+
+	@Test
+	public void markeFindAll() throws Exception {
+
+		this.mockMvc.perform(get("/api/marker/findAll")).andDo(print())
+				.andExpectAll(status().isOk(),
+							  jsonPath("$.length()").value(9),
+							  jsonPath("$[0].id").value(1),
+							  jsonPath("$[0].name").value("Asus"),
+							  jsonPath("$[0].productList[0].id").value("6"));
+	}
+
+	@Test
+	public void markerFind() throws Exception {
+
+		this.mockMvc.perform(get("/api/marker/find/6"))
+				.andDo(print()).andExpect(status().isOk())
+				.andExpectAll(jsonPath("$.id").value(6),
+							  jsonPath("$.name").value("Crucial"),
+							  jsonPath("$.productList.length()").value("2"),
+							  jsonPath("$.productList[0].id").value("2"),
+							  jsonPath("$.productList[1].id").value("5")
+						);
+	}
+	
+	@Test
+	public void markerFind1() throws Exception {
+
+		this.mockMvc.perform(get("/api/marker/find/4"))
+				.andDo(print())
+				.andExpectAll(status().isOk(),content().string("{\"id\":4,\"name\":\"Samsung\",\"productList\":[{\"id\":3,\"name\":\"Disco SSD 1 TB\",\"price\":150.99}]}"));
+	}
+	
+	@Test
+	public void createEmployeeAPI() throws Exception 
+	{
+		this.mockMvc.perform( MockMvcRequestBuilders
+		      .post("/api/marker/save")
+		      .content( "{\n"
+		      		+ "    \"name\": \"Javier S.A.\",\n"
+		      		+ "    \"productList\": [\n"
+		      		+ "        {\n"
+		      		+ "            \"name\": \"Producto 1\",\n"
+		      		+ "            \"price\": 120.00\n"
+		      		+ "        },\n"
+		      		+ "        {\n"
+		      		+ "            \"name\": \"producto 2\",\n"
+		      		+ "            \"price\": 755.00\n"
+		      		+ "        }\n"
+		      		+ "    ]   \n"
+		      		+ "}")
+		      .contentType(MediaType.APPLICATION_JSON)
+		      .accept(MediaType.APPLICATION_JSON))
+	      .andExpect(status().isCreated());
+	}
+	
+
+
+}

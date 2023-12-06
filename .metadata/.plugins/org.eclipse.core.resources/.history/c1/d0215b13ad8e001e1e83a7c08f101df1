@@ -1,0 +1,25 @@
+package com.example.demo;
+
+import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
+
+@Entity
+public class License {
+	
+	@jakarta.persistence.Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long Id;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private Date since;
+	private Integer years;
+	
+	@OneToOne(mappedBy = "license", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+	Bar bar;
+
+}

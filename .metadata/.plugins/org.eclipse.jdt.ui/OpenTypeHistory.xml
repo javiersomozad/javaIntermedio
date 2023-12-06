@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=ejemplos/src&lt;POO1{Vehiculo.java[Vehiculo" modifiers="513" timestamp="1700123876196"/>
+    <typeInfo handle="=simpleJPA/\/home\/jsomoza\/.m2\/repository\/org\/springframework\/data\/spring-data-commons\/3.2.0\/spring-data-commons-3.2.0.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-commons=/=/maven.version=/3.2.0=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.repository(CrudRepository.class[CrudRepository" modifiers="1537" timestamp="1701161964870"/>
+    <typeInfo handle="=apiREST/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.demo.service{IMarkerService.java[IMarkerService" modifiers="513" timestamp="1701424000847"/>
+    <typeInfo handle="=jpacrud/\/home\/jsomoza\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/3.2.0\/spring-boot-3.2.0.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.boot=/=/maven.artifactId=/spring-boot=/=/maven.version=/3.2.0=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.boot.web.servlet.support(SpringBootServletInitializer.class[SpringBootServletInitializer" modifiers="1057" timestamp="1700997912387"/>
+</typeInfoHistroy>

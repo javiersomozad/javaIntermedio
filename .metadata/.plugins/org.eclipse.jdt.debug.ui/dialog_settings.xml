@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=ejemplos/src&amp;lt;misApp{App.java[App&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=ejemplos/src&amp;lt;misApp{ejercicio2.java[ejercicio2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=ejemplos/src&amp;lt;cierres{App2.java[App2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=Spring-demo/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;curso.Spring_demo{App.java[App&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jpacrud/\/home\/jsomoza\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/3.2.0\/spring-boot-3.2.0.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.boot=/=/maven.artifactId=/spring-boot=/=/maven.version=/3.2.0=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&amp;lt;org.springframework.boot(SpringApplication.class[SpringApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=entityManagerDAO/\/home\/jsomoza\/.m2\/repository\/org\/antlr\/antlr4-runtime\/4.10.1\/antlr4-runtime-4.10.1.jar=/maven.pomderived=/true=/=/maven.groupId=/org.antlr=/=/maven.artifactId=/antlr4-runtime=/=/maven.version=/4.10.1=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&amp;lt;org.antlr.v4.runtime.atn(PredictionMode$AltAndContextMap.class[AltAndContextMap&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=ejemploJMS/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.example.demo{EjemploJmsApplication.java[EjemploJmsApplication&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="20"/>
+			<item key="DIALOG_Y_ORIGIN" value="20"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+		</section>
+	</section>
+</section>

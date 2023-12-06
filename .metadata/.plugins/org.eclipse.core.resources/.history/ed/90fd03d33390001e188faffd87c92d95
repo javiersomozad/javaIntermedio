@@ -1,0 +1,10 @@
+package com.example.demo.controllers.dto;
+
+import java.util.List;
+
+public class MarkerDTO {
+
+	private Long id;
+	private String name;
+	private List<ProductDTO> productList;
+}

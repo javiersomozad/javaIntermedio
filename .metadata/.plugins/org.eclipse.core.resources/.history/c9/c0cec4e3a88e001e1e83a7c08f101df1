@@ -1,0 +1,3 @@
+insert into news (title, text) values ('Java rules','And you do not');
+insert into news (title, text)  values 'JavaScripts rules','And Java do not');
+insert into news (title, text)  values ('Ruby rules','And JavaScript do not');

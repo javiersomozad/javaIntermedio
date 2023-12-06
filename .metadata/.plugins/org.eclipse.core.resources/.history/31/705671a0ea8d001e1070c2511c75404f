@@ -1,0 +1,5 @@
+package com.example.demo;
+
+public enum starType {
+	WHITEDWARF, WHITE, RED, GIANTRED, NEUTRINO, BLACKHOLE
+}
